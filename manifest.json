@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+  "name": "Wow-Reacts-Only",
+  "description": "This extension 'wow' reacts everything known to man",
+  "version": "0.1",
+
+  "browser_action": {
+    "default_icon": "icon.jpeg"
+  },
+  "page_action": {
+    "default_icon": "WHENFACEBOOKENABLED.png"
+  },
+  "permissions": [
+    "activeTab"
+  ]
+}
