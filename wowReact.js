@@ -21,3 +21,13 @@ function iterateThroughPhotos(){
     }, delay);
   }
 }
+
+function testCall(){
+  window.alert("SUCCESS");
+}
+
+//Consider writing this in popup.js instead
+
+
+//Name of callback function to trigger when clicked. No popup necessary.
+chrome.pageAction.onClicked.addListener(testCall);
