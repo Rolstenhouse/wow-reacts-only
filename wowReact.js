@@ -1,9 +1,21 @@
+//alert("watup");
 var profilePictureCount;
 
-function wowReact(){
-  var list = document.querySelectorAll('[aria-label="Wow"]');
-  list[0].click();
-}
+//function wowReact(){
+
+  var likeBtn = document.getElementsByClassName("_khz")
+  for(var i =0; i < likeBtn.length; i++)
+  {
+    likeBtn[i].click();
+    likeBtn[i].click();
+  }
+  var wows = document.querySelectorAll('[aria-label="Wow"]');
+  for(var i =0; i < wows.length; i++)
+  {
+    wows[i].click();
+  }
+
+//}
 
 function iterateThroughPhotos(){
   var profilePictureCountString = document.getElementById('fbPhotoSnowliftPositionAndCount').innerHTML;
@@ -21,13 +33,5 @@ function iterateThroughPhotos(){
     }, delay);
   }
 }
-
-function testCall(){
-  window.alert("SUCCESS");
-}
-
-//Consider writing this in popup.js instead
-
-
-//Name of callback function to trigger when clicked. No popup necessary.
-chrome.pageAction.onClicked.addListener(testCall);
+//wowReact();
+//iterateThroughPhotos();

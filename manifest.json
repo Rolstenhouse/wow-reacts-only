@@ -7,11 +7,12 @@
 
   "browser_action": {
     "default_icon": "icon.jpeg"
+
   },
   "permissions": [
     "activeTab"
   ],
   "background": {
-      "scripts": [ "wowReact.js" ]
+      "scripts": [ "background.js" ]
    }
 }
